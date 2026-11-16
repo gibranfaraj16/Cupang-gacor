@@ -117,7 +117,7 @@ def _buat_client(url, key):
 def get_client():
     """Ambil koneksi Supabase (pakai service_role key dari secrets.toml)."""
     try:
-        return _buat_client(st.secrets["SUPABASE_URL"], st.secrets["SUPABASE_SERVICE_KEY"])
+        return _buat_client(st.secrets["SUPABASE_URL"], st.secrets["SUPABASE_KEY"])
     except Exception:
         st.error("Isi SUPABASE_URL dan SUPABASE_SERVICE_KEY di .streamlit/secrets.toml")
         st.stop()                      # hentikan program di sini
