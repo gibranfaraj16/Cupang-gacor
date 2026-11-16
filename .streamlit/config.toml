@@ -1,63 +1,66 @@
 # =====================================================================
-#  .streamlit/config.toml  -  Tema "Cupang" untuk SiCupang
-#  Simpan file ini di:  <folder project>/.streamlit/config.toml
-#  (sejajar dengan secrets.toml), lalu jalankan ulang: streamlit run main.py
-#
-#  Konsep warna:
-#    - Latar biru laut gelap  = suasana air akuarium malam hari
-#    - Aksen merah-magenta    = sirip ekor cupang (tombol, progress, pilihan aktif)
-#    - Aksen teal             = kilau sisik biru cupang (link, sidebar)
+# SiCupang - Premium Teal Gray Theme
 # =====================================================================
 
 [theme]
-base = "dark"
+base = "light"
 
-# Warna utama: merah-magenta sirip cupang (tombol "primary", progress bar, tab aktif)
-primaryColor = "#FF3D6E"
+# Aksen utama
+primaryColor = "#168C8C"
 
-# Latar halaman: biru laut dalam
-backgroundColor = "#0A1A2F"
+# Background utama
+backgroundColor = "#E9F0EF"
 
-# Latar kartu, input, tabel, container border: biru akuarium
-secondaryBackgroundColor = "#12294A"
+# Background card, input, container
+secondaryBackgroundColor = "#F7FAF9"
 
-# Teks: putih kebiruan (lembut di mata)
-textColor = "#E6F1FA"
+# Warna teks
+textColor = "#263B3D"
 
-# Warna link
-linkColor = "#2DD4BF"
+# Link
+linkColor = "#168C8C"
 
-# Garis tepi kartu / input / tabel
-borderColor = "#1F4570"
+# Border
+borderColor = "#D0DEDC"
 showWidgetBorder = true
 
-# Sudut membulat seperti sirip
+# Radius
 baseRadius = "large"
 
 # Font
 font = "sans serif"
 
-# Latar blok kode (jarang dipakai di aplikasi ini)
-codeBackgroundColor = "#0D2240"
+# Code background
+codeBackgroundColor = "#E0EBE9"
 
-# Warna grafik bawaan (kalau suatu saat tidak diatur manual di kode):
-# merah sirip, teal sisik, biru, kuning emas, ungu, oranye
-chartCategoricalColors = ["#FF3D6E", "#2DD4BF", "#3B82F6", "#FBBF24", "#A78BFA", "#FB923C"]
+# Chart colors
+chartCategoricalColors = [
+    "#168C8C",
+    "#E8798D",
+    "#4D91B8",
+    "#D6A64F",
+    "#8B83C9",
+    "#65A88D"
+]
 
-# ---------------------------------------------------------------------
-# Sidebar: sedikit lebih gelap supaya terasa seperti "dasar akuarium"
-# ---------------------------------------------------------------------
+
+# =====================================================================
+# SIDEBAR
+# =====================================================================
+
 [theme.sidebar]
-backgroundColor = "#07131F"
-secondaryBackgroundColor = "#0F2540"
-borderColor = "#1B3B60"
-primaryColor = "#2DD4BF"
+backgroundColor = "#DCE8E6"
+secondaryBackgroundColor = "#EAF1EF"
+borderColor = "#C7D8D5"
+primaryColor = "#168C8C"
 
-# ---------------------------------------------------------------------
-# Pengaturan lain
-# ---------------------------------------------------------------------
+
+# =====================================================================
+# OTHER SETTINGS
+# =====================================================================
+
 [client]
-toolbarMode = "minimal"      # sembunyikan menu developer, tampilan lebih bersih
+toolbarMode = "minimal"
 
 [browser]
 gatherUsageStats = false
